@@ -1,7 +1,6 @@
-import { message } from 'antd';
 import express from 'express';
 const app = express();
-const port = 5773;
+const port = process.env.PORT || 5773;
 
 //middleware to JSON
 app.use(express.json())
